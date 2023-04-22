@@ -1,0 +1,155 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel = "icon" href = "im/logo.png" type = "image/png">
+    <link rel="shortcut icon"  href="/static/img/destino.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet" type="text/css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Tripday</title>
+</head>
+<body>
+    <!---header--->
+    <header class="header" >
+        <div class="head-top">
+            <div class="site-name">           
+              <a href="/" class="site-name"><img   src="/static/img/logo2.png"> </a>
+            </div>
+         
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/destinos">Destinos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/blog" tabindex="-1" aria-disabled="true">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+    </header>
+    <!---end of header--->
+
+    <section class="content-blog" >
+     <div class="destinos-blog">
+      <h1>Viaja por Colombia<hr></h1>
+     </div>
+     <div class="destinos">
+          <div class="img-destinos">
+            <img src="/static/img/destinos/barranquilla.jpg">
+          </div>
+              <div class="description-destinos">
+            <h2>Barranquilla</h2>
+            <h3>Fiesta y cultura en la ‘Puerta de Oro’ de Colombia</h3>
+            <p>Barranquilla, también conocida como la ‘Arenosa’ o ‘Curramba la Bella’, es una de las principales ciudades de Colombia y un destino turístico de referencia para locales y extranjeros.
+
+              Esta ciudad, donde el río Magdalena termina su largo recorrido, es cuna de grandes músicos, literatos y pintores. Además, es escenario de una de las fiestas más importante del país: el Carnaval de Barranquilla.
+              
+              Los días en la ‘Arenosa’ se viven siempre como un auténtico carnaval, pues la alegría, la música y la tradición de esta ciudad caribeña se sienten en cada una de sus plazas y calles. Además, el carisma y la amabilidad de su gente llena de energía a este territorio que atrapa a todo aquel que lo visita. La famosa frase del cantante Joe Arroyo “en Barranquilla me quedo” refleja el sentimiento de muchos.</p>
+          </div>
+     
+     </div>
+       <div class="destinos">
+        <div class="img-destinos">
+          <img src="/static/img/destinos/medellin.png">
+        </div>
+        <div class="description-destinos">
+          <h2>Medellín</h2>
+          <h3>La ciudad de la eterna primavera</h3>
+          <p>Medellín es una ciudad de contrastes en la que hay barrios ricos y elegantes como el Poblado y otros muy humildes y pobres. Sin embargo, en general la ciudad es muy limpia y con muchas zonas verdes. Los medellinenses quieren mucho a su ciudad y la mantienen limpia.
+            Para probar la gastronomía típica de Medellín al mejor precio y de la mejor calidad, visita el restaurante familiar Delicias de Manila. Su riquísimo menú cuesta COP$ 9000 e incluye sopa, plato principal y bebida. Otro templo gastronómico es Tal Cual, aunque sus platos son algo más caros. Ambos locales se encuentran en el barrio El Poblado.
+
+          </p>
+      </div>
+    </div>
+      <div class="destinos">
+        <div class="img-destinos">
+          <img src="/static/img/destinos/melgar.jpg">
+        </div>
+        <div class="description-destinos">
+          <h2>Melgar</h2>
+          <h3>Te va a encantar Melgar</h3>
+          <p>Melgar es un pequeño pueblo en mitad de la selva de Colombia donde pasar unos días de vacaciones en el paraíso, olvidarte de la ajetreada vida diaria y dejar que el tiempo pase disfrutando de sus numerosas piscinas y de paseos.   
+          </p>
+      </div>
+    </div>
+    <div class="destinos">
+      <div class="img-destinos">
+        <img src="/static/img/destinos/girardot.jpg">
+      </div>
+      <div class="description-destinos">
+        <h2>Girardot</h2>
+        <h3>La ciudad del sol</h3>
+        <p>Girardot es una ciudad turística, su ubicación la hace privilegiada para el turismo. Se encuentra a las orillas del Río Magdalena, en pleno centro del país.   
+          Cuenta con una excelente infraestructura para el descanso y esparcimiento. Como su actividad turística es todo el año, el comercio tiene una gran actividad, en productos tanto agrícolas como artesanales los cuales se llevan a la Plaza de Mercado.
+        </p>
+    </div>
+  </div>
+  <div class="destinos">
+    <div class="img-destinos">
+      <img src="/static/img/destinos/villaLeyva.jpg">
+    </div>
+    <div class="description-destinos">
+      <h2>Villa de Leyva</h2>
+      <h3>El pueblo del amor</h3>
+      <p>El tiempo parece haberse detenido en Villa de Leyva, un municipio boyacense que conserva en su arquitectura las muestras más auténticas del pasado colonial.
+
+Este pueblo es, sin duda, uno de los más bellos de Colombia, y es muy famoso por su importancia histórica y por su magnífica plaza, que le valieron ser reconocido como Monumento Nacional en 1954.
+
+De hecho, la Plaza Mayor de Villa de Leyva es la más grande de Colombia y una de las más imponentes de Suramérica con sus 14 mil metros cuadrados.
+
+Además de su arquitectura colonial, a Villa de Leyva la caracterizan sus variados paisajes rurales, que van desde la zona de páramo hasta la desértica.
+
+Debido a su gran oferta, Villa de Leyva es ideal para encontrarse con la historia, la ciencia, el arte, la cultura y la naturaleza. 
+      </p>
+  </div>
+</div>
+     </section>
+    <!--end of body content-->
+
+      <!-- Footer -->
+<footer class="text-center text-lg-start text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        
+    <!-- Right -->
+    <div class="logos">
+        <a href="" class="me-4 text-reset">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+          
+    <!-- Copyright -->
+    <div class="text-center p-4">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="#">JhonGutierrez.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</body>
+</html>
