@@ -12,6 +12,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from IPython.display import display
 
+
 nltk.download('stopwords')
 stopwords = nltk.corpus.stopwords.words('spanish')
 data = pd.read_excel('df_alojamientos.xlsx',index_col="Unnamed: 0")
@@ -39,6 +40,9 @@ def blog():
 def gracias():
     return render_template('gracias.html')
 
+@app.route("/404")
+def gracias():
+    return render_template('404.html')
 
 @app.route("/predecir",methods = ['POST'])
 def predecir():
@@ -166,4 +170,4 @@ def recommend(precio, Huespedes):
     return dfNew
 
 if __name__ == "___main___":
-    app.run()
+     app.run(host='0.0.0.0', port=80, debug=True)

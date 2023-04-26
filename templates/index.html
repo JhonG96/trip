@@ -59,10 +59,10 @@
         <form class="row g-3" method="post" action="{{url_for('predecir')}}">
             <label for="name">Empieza a viajar</label>
             <input type="currency" name="presupuesto" placeholder="presupuesto" required="required">
-            <input type="text" name="fecha de ida" placeholder="fecha de ida" required="required" >
-            <input type="text" name="fecha de regreso" placeholder="fecha de regreso" required="required"  >
+            <input type="date" name="fecha de ida" placeholder="fecha de ida" required="required" >
+            <input type="date" name="fecha de regreso" placeholder="fecha de regreso" required="required"  >
             <input type="number" name="adultos" placeholder="# Adultos" required="required">
-            <input type="number" name="ninos" placeholder="niños" required="required">
+            <input type="number" name="ninos" placeholder="# niños" required="required">
             <input type="number" name="mascotas" placeholder="# mascotas" min=0 required="required">
             <button type="submit" class="btn btn-primary">Buscar destino</button>   
         </form>
