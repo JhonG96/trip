@@ -41,7 +41,7 @@ def gracias():
     return render_template('gracias.html')
 
 @app.route("/404")
-def gracias():
+def broke():
     return render_template('404.html')
 
 @app.route("/predecir",methods = ['POST'])

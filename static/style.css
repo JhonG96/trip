@@ -321,8 +321,8 @@ footer{
       }
 
     img{
-        height: 100px;
-        width: 100px;
+        height: 50px;
+        width: 50px;
         border-radius: 5px;
         margin-left: 5%;
     }
@@ -330,6 +330,40 @@ footer{
         width: 100%;
         display: block ;
     }
+
+    .result{
+        margin-top: 100%;
+    }
+
+    .row.row-cols-3{
+        margin-left: 4%;
+    }
+
+    .card-img-top{
+
+        height: 60px;
+        width: 60px;
+    }
+
+    .card-img-top{
+        height: 50px;
+        width: 50px;
+    }
+
+    .card-title>h5{
+        font-size: 18px;
+    }
+    .card-title>h4{
+        font-size: 18px;
+    }
+    .card-title>p{
+        font-size: 12px;
+    }
+    
+    .card-text>p{
+        font-size: 12px;
+    }
+
 
     .title-1 > img{  
         display: none;
