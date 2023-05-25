@@ -1,5 +1,5 @@
 from traceback import print_exc
-from flask import Flask, render_template,request
+from flask import Flask, render_template,request,redirect
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -53,8 +53,11 @@ def predecir():
         ninos = int(request.form['ninos'])
         Huespedes = adultos + ninos
         recomendacion= recommend(precio, Huespedes)
-        for result in list(recomendacion):
-            print(result)
+        if recomendacion is None:
+            return render_template('404.html')
+        else:
+            for result in list(recomendacion):
+                print(result)
     except Exception as e:
         print ('type is:', e.__class__.__name__)
         print_exc()
@@ -157,7 +160,8 @@ def recommend(precio, Huespedes):
       df_original = df_original.sort_values(by=['Score'],ascending=False)
       dfNew =df_original.head(5)
       dfNew = dfNew[['Destino','Place','total_alojamiento']].values
-      
+      print(dfNew)
+       
       
 
     except Exception as e:
@@ -165,9 +169,5 @@ def recommend(precio, Huespedes):
         print_exc()
       #print('No tenemos resultado ahora')
     
-    
-
-    return dfNew
-
 if __name__ == "___main___":
      app.run(host='0.0.0.0', port=80, debug=True)

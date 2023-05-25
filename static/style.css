@@ -38,11 +38,20 @@ nav{
     font-size: 20px;
 }
 
-
+input[type=date] {
+    text-align: right;
+  }
+  
+  input[type="date"]:before {
+    color: grey;
+    content: attr(placeholder) !important;
+    margin-right: 0.4em;
+  }
 
 .navbar-nav.me-auto.mb-2.mb-lg-0 {
     display: contents;
     width: 100%;
+    list-style-type: none;
 }
 .navbar-collapse{
     display: flex;
@@ -53,6 +62,7 @@ nav{
 .navbar-collapse a{
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
    
 }
 
@@ -173,6 +183,7 @@ h3{  font-size: 17px;
     font-weight: bolder;
 
 }
+
 p{
     margin-left: 4%;
 }
@@ -304,6 +315,7 @@ footer{
 @media (max-width:768px){
 
     .head-top{
+        flex-direction: column;
         display: flex;
     }
     .site-name{
@@ -312,7 +324,7 @@ footer{
     }
     .navbar.navbar-expand-lg.navbar-light {
        
-            width: 70%;
+            width: 100%;
         }
       
 
@@ -339,13 +351,13 @@ footer{
         margin-left: 4%;
     }
 
-    .card-img-top{
+    .card-img-top>img{
 
         height: 60px;
         width: 60px;
     }
 
-    .card-img-top{
+    .card-img-top>img{
         height: 50px;
         width: 50px;
     }
@@ -412,6 +424,16 @@ footer{
         text-align: center;
         font-weight: bolder;
     
+    }
+
+    .title-1 h3 {font-family: Montserrat,sans-serif;
+        font-size: 39px;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        max-width: 544px;
     }
 
     .destinos{
