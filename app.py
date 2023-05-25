@@ -160,7 +160,8 @@ def recommend(precio, Huespedes):
       df_original = df_original.sort_values(by=['Score'],ascending=False)
       dfNew =df_original.head(5)
       dfNew = dfNew[['Destino','Place','total_alojamiento']].values
-      print(dfNew)
+      return dfNew
+      
        
       
 
